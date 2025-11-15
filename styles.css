@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #000000;
+    background: -moz-linear-gradient(45deg, #000000 0%, #126BCD 48%, #1C9529 100%);
+    background: -webkit-linear-gradient(45deg, #000000 0%, #126BCD 48%, #1C9529 100%);
+    background: linear-gradient(45deg, #000000 0%, #126BCD 48%, #1C9529 100%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 550px;
+    height: 450px; 
+    border: 2px solid  rgb(106, 90, 205); 
+    border-radius: 15px;
+}
+
+h1 {
+
+    font-weight: 900;
+    font-size: 50px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    color: transparent;
+    background-size: 400px 100%;
+    background-position: 0% 50%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: desliza-brilho 8s linear infinite;
+}
+
+h1 {
+    background-image: linear-gradient(to right,
+            rgb(30, 30, 30) 0%,
+            rgb(200, 200, 200) 25%,
+            rgb(50, 50, 50) 50%,
+            rgb(200, 200, 200) 75%,
+            rgb(30, 30, 30) 100%);
+}
+
+@keyframes desliza-brilho {
+    0% {
+        background-position: 0 50%;
+    }
+
+    100% {
+        background-position: 400px 50%;
+    }
+}
+
+div {
+    margin-top: 20px;
+    display: flex;
+    gap: 70px;
+
+}
+
+.pedra {
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(90, 90, 90);
+    font-size: 40px;
+}
+
+.papel {
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(70, 137, 255);
+    font-size: 40px;
+}
+
+.tesoura {
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(109, 191, 146);
+    font-size: 40px;
+}
+
+.result {
+    margin-top: 10px;
+    color: rgb(255, 188, 0);
+}
+
+.humano {
+    margin-top: 10px;
+    color: rgba(0, 152, 94, 1);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.maquina {
+    color: crimson;
+    font-size: 30px;
+    font-weight: 700;
+}
